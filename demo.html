@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>To do list demo</title>
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="col col-md-12 text-center">
+                <form class="my-3" id="itemForm">
+                    <h3 class="text-capitalize mb-4">to do list</h3>
+                    <div class="input-group">
+                        <input type="text" class="text-capitalize form-control" id="itemInput" placeholder="name..." required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-capitalize" id='addTask' type="submit">add item</button>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-list my-5"></div>
+                        <button type="button" id='clearTask' class="btn btn-danger my-3 text-capitalize" id="clear-list">clear items</button>
+                    </div>
+                </form>
+            </div>
+            <div class="to-do-output">
+                <table class="table table-striped" id='taskListTable'>
+                    <tr></tr>
+                </table>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
