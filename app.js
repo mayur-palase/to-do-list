@@ -26,7 +26,6 @@ loadExistingTasks();
         } 
         else {
             task_list = JSON.parse(existing_list);
-            console.log("task list = " + task_list);
             task_list.push(input_value);
             localStorage.setItem('previous_items', JSON.stringify(task_list));
             // item_input.value = "";
@@ -64,10 +63,8 @@ clr_list_btn.addEventListener('click', function(){
 
 function editTask(index) {
     save_index = index;
-    console.log(save_index);
     add_task_btn.style.display = 'none';
     document.getElementById('saveTask').style.display = 'block';
-    console.log()
     item_input.value = task_list[index];
 }
 
